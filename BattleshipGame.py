@@ -30,7 +30,7 @@ ship_col = random_col(board)
 # print(ship_col) for debugging only
 
 for turn in range(4):
-    print('Turn' + str( turn + 1))
+    print('Turn ' + str( turn + 1))
     guess_row = int(raw_input('Guess Row:'))
     guess_col = int(raw_input('Guess Col:'))
 
