@@ -1,8 +1,8 @@
-"""
+'''
 This is a simplified, one-player version of the classic board game Battleship.
 In this version of the game, there will be a single ship hidden in a random location
 on a 5*5 grid. The player will have 4 guesses to try to sink the ship.
-"""
+'''
 
 from random import randint
 board = []
