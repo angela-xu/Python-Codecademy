@@ -1,8 +1,8 @@
-"""
+'''
 This is a simplified, one-player version of the classic board game Battleship.
 In this version of the game, there will be a single ship hidden in a random location
 on a 5*5 grid. The player will have 4 guesses to try to sink the ship.
-"""
+'''
 
 from random import randint
 board = []
@@ -31,8 +31,8 @@ ship_col = random_col(board)
 
 for turn in range(4):
     print('Turn ' + str( turn + 1))
-    guess_row = int(raw_input('Guess Row:'))
-    guess_col = int(raw_input('Guess Col:'))
+    guess_row = int(input('Guess Row:'))
+    guess_col = int(input('Guess Col:'))
 
     if (guess_row - 1) == ship_row and (guess_col - 1) == ship_col:
         print('Congratulations! You sunk my battleship')
@@ -47,6 +47,7 @@ for turn in range(4):
         else:
             print('You missed my battleship!')
             board[guess_row - 1][guess_col - 1] = 'X'
+
         if turn == 3:
             print('Game Over.')
 
